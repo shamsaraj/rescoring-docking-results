@@ -1,0 +1,32 @@
+########################################################
+#Instructions:
+#Please don't change the tags: [paths] or [values].
+#Use "/" instead of "\".
+#Paths should not end with "/".
+#All of the paths except RpathE should not contain any spaces.
+#RpathE should be placed inside "...". 
+########################################################
+#Descriptions for the parameters:
+#RpathE --> path of excecutable for Rscript.exe"
+#project_path --> Output path 
+#recfile --> name of the receptor file (.mol2, .pdb or .pdbqt)
+#user_receptor_path --> path for the receptor file
+#user_actives_path --> path for the active molecules or virtual screening results molecules (.mol2, .pdb or .pdbqt)
+#user_decoys_path --> If aplicable, path for the decoy molecules (.mol2, .pdb or .pdbqt)
+# weight_... --> If aplicable, user-defined weights for rescoring
+# evaluations --> If aplicable, Maximum number of evaluation steps will be run by a selected optimizer
+#########################################################
+[paths]
+RpathE = "D:/Program Files/R/R-3.0.2/bin/x64/Rscript.exe"
+project_path = D:/Output3 
+recfile = receptor.pdb 
+user_receptor_path = D:/project  
+user_actives_path = D:/project/actives
+user_decoys_path = D:/project/decoys
+[values]
+weight_gauss1 = -0.035579
+weight_gauss2 = -0.005156
+weight_repulsion = 0.84024500000000002
+weight_hydrophobic = -0.035069000000000003
+weight_hydrogen = -0.58743900000000004
+evaluations = 100

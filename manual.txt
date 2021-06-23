@@ -1,0 +1,9 @@
+Installing:
+The executable was built for windows. Just run the scorer.exe file.
+
+Perquisites:
+R 3.0.2 is needed for successful execution of the Scorer. The libraries ROCR and enrichvs should be installed.
+
+Usage:
+Change the parameters defined in the config.txt file.
+Run the Scorer.
